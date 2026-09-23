@@ -1,63 +1,126 @@
-<div id="wrapper">
-<html>
-  <head>
-    <title>Jake Cockburn's Portfolio</title>
-    <link rel="icon" type="image/png" href="WebImg.png">
-    <style>
-      #wrapper {
-                margin-left:auto;
-                margin-right:auto;
-                width:960px;
-              }
-      h1 {
-        font-size:60px;
-        
-      }
-      
-      h2 {
-        font-size:50px;
-        display: inline;
-        float: left;
-      }
-      body 
-      {
-        background-image: url('backgroundtop.png');
-        background-repeat: no-repeat;
-        background-size: 250% 200%;
-      }
-      
-      p {
-        display: inline;
-        background-color: honeydew;
-      }
-      
-      
-      </style>
-  </head>
-  <body>
-    <h1 style = "background-color:lightgray;">Welcome to Jake Cockburn's portfolio</h1>
-  </body>
-  <body>
-    <h2 style="background-color:powderblue;">Previous work</h2>
-    <div style="clear:both;">
-      <p>Solu</p>
-    </div>
-    <div style="clear:both;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Jake Cockburn's Portfolio</title>
+  <link rel="icon" type="image/jpg" href="faviconimg.jpg">
+  <style>
+    #wrapper {
+      margin-left: auto;
+      margin-right: auto;
+      width: 960px;
+    }
+    
+    h1 {
+      width: fit-content;
+      font-size: 60px;
+      background-color: lightgray;
+      padding: 10px;
+    }
+    
+    h2 {
+      width: fit-content;
+      font-size: 50px;
+      background-color: powderblue;
+      padding: 5px 10px;
+      margin-top: 30px;
+    }
 
+    h3 {
+      width: fit-content;
+      font-size: 40px;
+      background-color: powderblue;
+      padding: 5px 10px;
+      margin-top: 30px;
+    }
+
+    h4 {
+      width: fit-content;
+      background-color: honeydew;
+      padding: 5px;
+      margin: 5px 0;
+    }
+    
+    body {
+      width: fit-content;
+      background-image: url('backgroundtop.png');
+      background-repeat: no-repeat;
+      background-size: 250% 200%;
+      font-family: Arial, sans-serif;
+    }
+    
+    p {
+      width: fit-content;
+      background-color: khaki;
+      padding: 5px;
+      margin: 5px 0;
+    }
+
+
+    li {
+      background-color: honeydew;
+      margin-bottom: 6px; 
+      padding: 5px;
+      width: fit-content; 
+    }
+    
+    .portfolio-item {
+      margin-bottom: 15px;
+    }
+    
+    .contact-item {
+      margin-bottom: 10px;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    
+    <h1>Welcome to Jake Cockburn's portfolio</h1>
+
+    <h2>Previous work</h2>
+    <div class="portfolio-item">
+      <h4>Solu</h4>
+      <p>Solu was my first group project with team Hygge as part of the DES315 project at Abertay University, it is a 2D platformer made in Unity</p>
+    </div>
+    
+    <div class="portfolio-item">
       <p>Grappling hook mechanic</p>
-    </div>
       <img src="GrappleTemp.gif" alt="Gif of grappling hook mechanic" width="200" height="200">
-    <div style="clear:both;">
-    <p>Enemy Ai Pathing and behaviour trees in unreal</p>
     </div>
+    
+    <div class="portfolio-item">
+      <h4>Enemy AI Pathing and Behaviour Trees in Unreal</h4>
+      <p>Developed AI pathfinding and behavior trees for enemies in Unreal Engine</p>
+    </div>
+
+    <div class="portfolio-item">
+      <h4>Worked on shaders</h4>
+    </div>
+
+    <h3>Skills</h3>
+    <ul>
+      <li>C++</li>
+      <li>Unreal Engine 5</li>
+      <li>Unity</li>
+      <li>C#</li>
+    </ul>
+
     <h3>How To Contact Me</h3>
-    <p>Email:</p>
-    <p>Phone:</p>
-    <p>LinkedIn:</p>
-    <p>GitHub:</p>
-    <p>Discord:&#12432;</p>
-  </body>
-  </html>
-  
-  
-  </div>
+    <div class="contact-item">
+      <p>Email: 2300929@uad.ac.uk</p>
+    </div>
+    
+    <div class="contact-item">
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/jake-cockburn/">Visit My LinkedIn Profile</a></p>
+    </div>
+    
+    <div class="contact-item">
+      <p>GitHub: <a href="https://github.com/SUPERJAY999">Visit My GitHub Profile</a></p>
+    </div>
+
+  </div> 
+</body>
+</html>
