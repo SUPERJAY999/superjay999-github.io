@@ -3,127 +3,253 @@
 <head>
   <title>Jake Cockburn's Portfolio</title>
   <link rel="icon" type="image/jpg" href="faviconimg.jpg">
-  <style>
-    #wrapper {
-      margin-left: auto;
-      margin-right: auto;
-      width: 960px;
-    }
-    
-    h1 {
-      width: fit-content;
-      font-size: 60px;
-      background-color: lightgray;
-      padding: 10px;
-    }
-    
-    h2 {
-      width: fit-content;
-      font-size: 50px;
-      background-color: powderblue;
-      padding: 5px 10px;
-      margin-top: 30px;
-    }
-
-    h3 {
-      width: fit-content;
-      font-size: 40px;
-      background-color: powderblue;
-      padding: 5px 10px;
-      margin-top: 30px;
-    }
-
-    h4 {
-      width: fit-content;
-      background-color: honeydew;
-      padding: 5px;
-      margin: 5px 0;
-    }
-    
-    body {
-      width: fit-content;
-      background-image: url('backgroundtop.png');
-      background-repeat: no-repeat;
-      background-size: 250% 200%;
-      font-family: Arial, sans-serif;
-    }
-    
-    p {
-      width: fit-content;
-      background-color: khaki;
-      padding: 5px;
-      margin: 5px 0;
-    }
-
-
-    li {
-      background-color: honeydew;
-      margin-bottom: 6px; 
-      padding: 5px;
-      width: fit-content; 
-      background-color: rgba(240, 240, 240, 0.8);
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-      color: maroon;
-    }
-    
-    .portfolio-item {
-      margin-bottom: 15px;
-    }
-    
-    .contact-item {
-      margin-bottom: 10px;
-    }
-
-
-
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+  <nav>
+  <div class="nav-logo">JAKE COCKBURN</div>
+
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
   <div id="wrapper">
-    
-    <h1>Welcome to Jake Cockburn's portfolio</h1>
+    <section class="hero">
+      <p class="hero-small">HELLO, I'M</p>
+      <h1>Jake Cockburn</h1>
+      <h2>Game Programmer</h2>
+      <p class="hero-description"> C++ • Unreal Engine • Unity • DirectX11</p>
 
-    <h2>Previous work</h2>
-    <div class="portfolio-item">
-      <h4>Solu</h4>
-      <p>Solu was my first group project with team Hygge as part of the DES315 project at Abertay University, it is a 2D platformer made in Unity</p>
-    </div>
-    
-    <div class="portfolio-item">
-      <p>Grappling hook mechanic</p>
-      <img src="GrappleTemp.gif" alt="Gif of grappling hook mechanic" width="200" height="200">
-    </div>
-    
-    <div class="portfolio-item">
-      <h4>Enemy AI Pathing and Behaviour Trees in Unreal</h4>
-      <p>Developed AI pathfinding and behavior trees for enemies in Unreal Engine</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="button">View My Projects</a>
+        <a href="#contact" class="button button-outline">Contact Me</a>
+      </div>
+
+</section>
+
+<section id="about" class="section">
+
+  <h2 class="section-title">About Me</h2>
+
+  <div class="about-card">
+
+    <div>
+      <h3>Game Programmer</h3>
+
+      <p>
+        I am a game programming student with experience
+        developing gameplay systems, AI and graphics
+        programming using C++, C#, Unreal Engine, Unity
+        and DirectX11.
+      </p>
+
+      <p>
+        I enjoy working on gameplay mechanics, enemy AI
+        and technical systems within games.
+      </p>
     </div>
 
-    <div class="portfolio-item">
-      <h4>Created My Own Shaders Using DirectX11</h4>
+  </div>
+
+</section>
+
+    <section id="projects" class="section">
+
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects-grid">
+
+    <div class="project-card">
+
+      <img
+        src="GrappleTemp.gif"
+        alt="Grappling hook mechanic"
+      >
+
+      <div class="project-content">
+
+        <h3>Grappling Hook Mechanic</h3>
+
+        <p>
+          Developed a grappling hook mechanic for
+          CMP302 - Gameplay Mechanics Development.
+        </p>
+
+        <div class="tags">
+          <span>Unity</span>
+          <span>C#</span>
+          <span>Gameplay</span>
+        </div>
+
+      </div>
+
     </div>
 
-    <h3>Skills</h3>
-    <ul>
-      <li>C++</li>
-      <li>Unreal Engine 5</li>
-      <li>Unity</li>
-      <li>C#</li>
-    </ul>
 
-    <h3>How To Contact Me</h3>
-    <div class="contact-item">
-      <p>Email: 2300929@uad.ac.uk</p>
+    <div class="project-card">
+
+      <div class="project-placeholder">
+        SOLU
+      </div>
+
+      <div class="project-content">
+
+        <h3>Solu</h3>
+
+        <p>
+          My first group project with Team Hygge as part
+          of the DES315 project at Abertay University.
+          Solu is a 2D platformer created in Unity.
+        </p>
+
+        <div class="tags">
+          <span>Unity</span>
+          <span>C#</span>
+          <span>2D Platformer</span>
+          <span>Team Project</span>
+        </div>
+
+      </div>
+
     </div>
-    
-    <div class="contact-item">
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/jake-cockburn/">Visit My LinkedIn Profile</a></p>
+
+
+    <div class="project-card">
+
+      <div class="project-placeholder">
+        UNREAL ENGINE 5
+      </div>
+
+      <div class="project-content">
+
+        <h3>Enemy AI</h3>
+
+        <p>
+          Developed AI pathfinding and behaviour trees
+          for enemies in Unreal Engine 5 for
+          CMP304 - Artificial Intelligence.
+        </p>
+
+        <div class="tags">
+          <span>Unreal Engine 5</span>
+          <span>C++</span>
+          <span>AI</span>
+          <span>Behaviour Trees</span>
+        </div>
+
+      </div>
+
     </div>
-    
-    <div class="contact-item">
-      <p>GitHub: <a href="https://github.com/SUPERJAY999">Visit My GitHub Profile</a></p>
+
+
+    <div class="project-card">
+
+      <div class="project-placeholder">
+        DIRECTX11
+      </div>
+
+      <div class="project-content">
+
+        <h3>DirectX11 Shaders</h3>
+
+        <p>
+          Created my own shaders using DirectX11 as part
+          of CMP301 - Graphics Programming.
+        </p>
+
+        <div class="tags">
+          <span>C++</span>
+          <span>DirectX11</span>
+          <span>Graphics</span>
+          <span>Shaders</span>
+        </div>
+
+      </div>
+
     </div>
+
+  </div>
+
+</section>
+
+   <section id="skills" class="section">
+
+  <h2 class="section-title">Skills</h2>
+
+  <div class="skills-grid">
+
+    <div class="skill-card">
+      <div class="skill-icon">C++</div>
+      <h3>C++</h3>
+      <p>Game Programming</p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon">UE5</div>
+      <h3>Unreal Engine 5</h3>
+      <p>Gameplay & AI</p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon">Unity</div>
+      <h3>Unity</h3>
+      <p>Gameplay Development</p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon">C#</div>
+      <h3>C#</h3>
+      <p>Game Development</p>
+    </div>
+
+  </div>
+
+</section>
+
+    <section id="contact" class="contact-section">
+
+  <h2>Let's Connect</h2>
+
+  <p>
+    Interested in working together or seeing more of my work?
+  </p>
+
+  <div class="contact-buttons">
+
+    <a
+      href="mailto:2300929@uad.ac.uk"
+      class="button button-outline"
+    >
+      Email Me
+    </a>
+
+    <a
+      href="https://www.linkedin.com/in/jake-cockburn/"
+      class="button button-outline"
+    >
+      LinkedIn
+    </a>
+
+    <a
+      href="https://github.com/SUPERJAY999"
+      class="button button-outline"
+    >
+      GitHub
+    </a>
+
+  </div>
+
+</section>
 
   </div> 
 </body>
+
+
+
 </html>
