@@ -15,46 +15,59 @@ html {
         
           background-image:
             linear-gradient(
-              rgba(56, 189, 248, 0.03) 1px,
-              transparent 1px
-            ),
+                          rgba(56, 189, 248, 0.03) 1px,
+                            transparent 1px
+                           ),
             linear-gradient(
-              90deg,
-              rgba(56, 189, 248, 0.03) 1px,
-              transparent 1px
-            );
+                            90deg,
+                            rgba(56, 189, 248, 0.03) 1px,
+                            transparent 1px
+                           );
         
           background-size: 40px 40px;
         
-          font-family: Arial, sans-serif;
+          font-family: 'Inter', sans-serif;
         
           color: #f8fafc;
          }
     
+    h1,h2,h3, .nav-logo {
+                         font-family: 'Space Grotesk', sans-serif;
+                        }
+
     p {
         color: #cbd5e1;
         line-height: 1.6;
       }
 
     nav {
-         position: fixed;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 70px;
-
-         background: rgba(15, 23, 42, 0.95);
-         backdrop-filter: blur(10px);
-
-         display: flex;
-         align-items: center;
-         justify-content: space-between;
-
-         padding: 0 50px;
-         box-sizing: border-box;
-
-         z-index: 1000;
-       }       
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    
+        width: min(1000px, 90%);
+    
+        height: 65px;
+    
+        padding: 0 25px;
+    
+        background: rgba(15, 23, 42, 0.75);
+    
+        border: 1px solid rgba(148, 163, 184, 0.15);
+        border-radius: 15px;
+    
+        backdrop-filter: blur(15px);
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        box-sizing: border-box;
+    
+        z-index: 1000;
+       }
+             
 
     .nav-logo {
                color: white;
@@ -79,26 +92,60 @@ html {
                        }
 
     .hero {
-           min-height: calc(100vh - 50px);
+           min-height: 100vh;
            display: flex;
-           flex-direction: column;
            justify-content: center;
            align-items: center;
            text-align: center;
-           color: white;
+           position: relative;
+           overflow: hidden;
            background:
              radial-gradient(circle at 20% 30%, #1e3a8a, transparent 40%),
              radial-gradient(circle at 80% 70%, #581c87, transparent 40%),#0f172a;
           }
 
+    .hero::before {
+                   content: "";
+                   position: absolute;
+                   width: 600px;
+                   height: 600px;
+               
+                   border-radius: 50%;
+               
+                   background: rgba(56, 189, 248, 0.08);
+               
+                   filter: blur(100px);
+               
+                   top: 20%;
+                   left: 50%;
+               
+                   transform: translateX(-50%);
+                }
+
+    .hero-content {
+                   position: relative;
+                   z-index: 1;
+                   max-width: 900px;
+                  }
+
     .hero h1 {
-              background: none;
-              padding: 0;
-              margin: 0;
-              font-size: 80px;
-              color: white;
+              font-size: clamp(60px, 9vw, 110px);
+              line-height: 1;
+              margin: 15px 0;
+              letter-spacing: -4px;
              }
-    
+          
+.hero h1 span {
+               color: #38bdf8;
+              }
+
+.hero-description {
+                   max-width: 650px;
+                   margin: 25px auto;
+                   font-size: 20px;
+                   color: #94a3b8;
+                  }
+                   
    .hero h2 {
              background: none;
              padding: 0;
@@ -108,11 +155,31 @@ html {
             }
    
    .hero-small {
-                background: none;
-                color: #94a3b8;
-                font-size: 18px;
+                color: #38bdf8;
+                font-size: 14px;
+                font-weight: 700;
                 letter-spacing: 5px;
                }
+
+.hero-tech {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 30px 0;
+           }
+
+.hero-tech span {
+                 padding: 8px 14px;
+             
+                 border: 1px solid #334155;
+                 border-radius: 20px;
+             
+                 color: #cbd5e1;
+                 background: rgba(30, 41, 59, 0.6);
+             
+                 font-size: 14px;
+                }
    
    .hero-description {
                       background: none;
@@ -123,7 +190,10 @@ html {
    .hero-buttons {
                   margin-top: 25px;
                   display: flex;
+                  justify-content: center;
+                  align-items: center;
                   gap: 15px;
+                  width: 100%;
                  }
     
     .button {
