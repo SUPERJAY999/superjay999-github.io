@@ -101,7 +101,8 @@ html {
            overflow: hidden;
            background:
              radial-gradient(circle at 20% 30%, #1e3a8a, transparent 40%),
-             radial-gradient(circle at 80% 70%, #581c87, transparent 40%),#0f172a;
+             radial-gradient(circle at 50% 50%, purple, transparent 60%),
+             radial-gradient(circle at 80% 70%, #b75e5a, transparent 40%),#0f172a;
           }
 
     .hero::before {
