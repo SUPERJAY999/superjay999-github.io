@@ -144,13 +144,14 @@ html {
               letter-spacing: -4px;
              }
 
-    .hero p {
+    /*.hero p {
               font-size: 20px;
               color: #94a3b8;
               margin: 0px 0;
-              background: rgba(15, 23, 42, 0.75);
+              background:#334155; 
               
-             }
+              
+             } */
           
 .hero h1 span {
                color: #38bdf8;
