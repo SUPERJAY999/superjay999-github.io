@@ -176,7 +176,6 @@ html {
                  padding: 8px 14px;
              
                  border: 1px solid #334155;
-                 border-radius: 20px;
              
                  color: #cbd5e1;
                  background: rgba(30, 41, 59, 0.6);
@@ -201,8 +200,6 @@ html {
            
              background: #38bdf8;
              color: #0f172a;
-           
-             border-radius: 8px;
            
              text-decoration: none;
              font-weight: bold;
@@ -248,7 +245,6 @@ html {
    .about-card {
                 background: #1e293b;
                 border: 1px solid #334155;
-                border-radius: 15px;
                 padding: 35px;
                 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
                }
@@ -274,7 +270,6 @@ html {
     .project-card {
                    background: #1e293b;
                    border: 1px solid #334155;
-                   border-radius: 15px;
                    overflow: hidden;
                    transition:
                      transform 0.3s,
@@ -328,7 +323,6 @@ html {
                 background: #0f172a;
                 color: #38bdf8;
                 border: 1px solid #38bdf8;
-                border-radius: 20px;
                 padding: 6px 12px;
                 font-size: 13px;
                }
@@ -342,7 +336,6 @@ html {
     .skill-card {
                  background: #1e293b;
                  border: 1px solid #334155;
-                 border-radius: 15px;
                  padding: 30px 20px;
                  text-align: center;
                  transition: 0.3s;
@@ -389,7 +382,6 @@ html {
                           #1e3a8a,
                           #581c87
                         );
-                      border-radius: 20px;
                      }
 
     .contact-section h2 {
